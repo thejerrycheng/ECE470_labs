@@ -1,0 +1,11 @@
+clear all;
+clc;
+
+link_1 = [thetas(1) 0.76    0       pi/2    ];
+link_2 = [thetas(2) -0.2365 0.4323  0       ];
+link_3 = [thetas(3) 0       0       pi/2    ];
+link_4 = [thetas(4) 0.4318  0       -pi/2   ];
+link_5 = [thetas(5) 0       0       pi/2    ];
+link_6 = [thetas(6) 0.20    0       0       ];
+
+my_robot = mypuma(DH)
