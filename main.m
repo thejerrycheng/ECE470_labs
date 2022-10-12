@@ -69,12 +69,13 @@ for i = 1:size(t, 2)
 end
 
 
- = vertcat(pi, p2);
+lines = vertcat(p1', p2');
 
 figure
 plot3(d(1,:),d(2,:),d(3,:),'r', 'LineWidth', 4);
 hold on;
-plot3(p1, p2, 'k-');
+% plot3(line(1,:),line(2,:),line(3,:),'k');
+plot3(lines(:, 1),lines(:, 2),lines(:, 3));
 hold on;
 plot(myrobot, q);
 
